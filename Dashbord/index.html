@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdminLTE v4 Clone - Dark Mode & Independent Scroll</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="app-wrapper">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-logo">
+        <i class="fa-solid fa-a"></i>
+      </div>
+      <span>AdminLTE 4</span>
+    </div>
+
+    <div class="sidebar-scroll">
+      <ul class="menu">
+        <li class="menu-title active">
+          <div class="menu-left">
+            <i class="fa-solid fa-gauge-high"></i>
+            <span>Dashboard</span>
+          </div>
+          <i class="fa-solid fa-angle-down"></i>
+        </li>
+
+        <li class="submenu active-sub"><i class="fa-regular fa-circle"></i> Dashboard v1</li>
+        <li class="submenu"><i class="fa-regular fa-circle"></i> Dashboard v2</li>
+        <li class="submenu"><i class="fa-regular fa-circle"></i> Dashboard v3</li>
+
+        <li class="menu-title">
+          <div class="menu-left">
+            <i class="fa-solid fa-palette"></i>
+            <span>Theme Generate</span>
+          </div>
+        </li>
+
+        <li class="menu-title">
+          <div class="menu-left">
+            <i class="fa-solid fa-cube"></i>
+            <span>Widgets</span>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </li>
+
+        <li class="menu-title">
+          <div class="menu-left">
+            <i class="fa-solid fa-table-cells-large"></i>
+            <span>Layout Options</span>
+          </div>
+          <span class="count">7</span>
+        </li>
+
+        <li class="menu-title">
+          <div class="menu-left">
+            <i class="fa-regular fa-copy"></i>
+            <span>UI Elements</span>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </li>
+
+        <li class="menu-title">
+          <div class="menu-left">
+            <i class="fa-regular fa-envelope"></i>
+            <span>Mailbox</span>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </li>
+
+        <li class="menu-title">
+          <div class="menu-left">
+            <i class="fa-regular fa-pen-to-square"></i>
+            <span>Forms</span>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </li>
+
+        <li class="menu-title">
+          <div class="menu-left">
+            <i class="fa-solid fa-table"></i>
+            <span>Tables</span>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </li>
+
+        <div class="section-heading">PAGES</div>
+        <li class="menu-title">
+          <div class="menu-left">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>Pages</span>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </li>
+
+        <div class="section-heading">EXAMPLES</div>
+        <li class="menu-title">
+          <div class="menu-left">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <span>Auth</span>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </li>
+
+        <div class="section-heading">MULTI LEVEL EXAMPLE</div>
+        <li class="menu-title"><div class="menu-left"><i class="fa-regular fa-circle"></i><span>Level 1</span></div></li>
+        <li class="menu-title"><div class="menu-left"><i class="fa-regular fa-circle"></i><span>Level 1</span></div><i class="fa-solid fa-angle-right"></i></li>
+        <li class="menu-title"><div class="menu-left"><i class="fa-regular fa-circle"></i><span>Level 1</span></div></li>
+        <li class="menu-title"><div class="menu-left"><i class="fa-regular fa-circle"></i><span>Level 1</span></div></li>
+        <li class="menu-title"><div class="menu-left"><i class="fa-regular fa-circle"></i><span>Level 1</span></div><i class="fa-solid fa-angle-right"></i></li>
+
+        <div class="section-heading">LABELS</div>
+        <li class="label-item"><span class="dot red"></span> Important</li>
+        <li class="label-item"><span class="dot yellow"></span> Warning</li>
+        <li class="label-item"><span class="dot blue"></span> Informational</li>
+
+        <div class="doc-btn-wrap">
+          <button class="doc-btn"><i class="fa-regular fa-book-open"></i> View documentation</button>
+        </div>
+      </ul>
+    </div>
+  </aside>
+
+  <div class="main-area">
+
+    <header class="topbar">
+      <div class="topbar-left">
+        <i class="fa-solid fa-bars"></i>
+        <a href="#">Live preview</a>
+        <a href="#">Documentation</a>
+      </div>
+
+      <div class="topbar-right">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <div class="icon-badge">
+          <i class="fa-regular fa-message"></i>
+          <span class="badge red">3</span>
+        </div>
+
+        <div class="icon-badge">
+          <i class="fa-regular fa-bell"></i>
+          <span class="badge yellow">15</span>
+        </div>
+
+        <i class="fa-solid fa-expand"></i>
+        <i class="fa-solid fa-moon"></i>
+
+        <div class="profile">
+          <img src="https://i.pravatar.cc/50?img=12" alt="">
+          <span>Alexander Pierce</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="page-header">
+        <h1>Dashboard</h1>
+        <div class="breadcrumb">
+          <a href="#">Home</a>
+          <span>/</span>
+          <span>Dashboard</span>
+        </div>
+      </div>
+
+      <div class="cards-row">
+        <div class="stat-card blue">
+          <div class="card-content">
+            <h2>150</h2>
+            <p>New Orders</p>
+          </div>
+          <i class="fa-solid fa-cart-shopping stat-icon"></i>
+          <div class="card-footer">More info <i class="fa-solid fa-link"></i></div>
+        </div>
+
+        <div class="stat-card green">
+          <div class="card-content">
+            <h2>53<sup>%</sup></h2>
+            <p>Bounce Rate</p>
+          </div>
+          <i class="fa-solid fa-chart-simple stat-icon"></i>
+          <div class="card-footer">More info <i class="fa-solid fa-link"></i></div>
+        </div>
+
+        <div class="stat-card yellow">
+          <div class="card-content">
+            <h2>44</h2>
+            <p>User Registrations</p>
+          </div>
+          <i class="fa-solid fa-user-plus stat-icon"></i>
+          <div class="card-footer dark-text">More info <i class="fa-solid fa-link"></i></div>
+        </div>
+
+        <div class="stat-card red">
+          <div class="card-content">
+            <h2>65</h2>
+            <p>Unique Visitors</p>
+          </div>
+          <i class="fa-solid fa-chart-pie stat-icon"></i>
+          <div class="card-footer">More info <i class="fa-solid fa-link"></i></div>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="panel sales-panel">
+          <div class="panel-header">Sales Value</div>
+          <div class="sales-body">
+            <div class="y-axis">
+              <span>100</span>
+              <span>80</span>
+              <span>60</span>
+              <span>40</span>
+              <span>20</span>
+              <span>0</span>
+            </div>
+
+            <div class="chart-box">
+              <div class="grid-lines">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+
+              <svg class="chart-svg" viewBox="0 0 800 360" preserveAspectRatio="none">
+                <path d="M0,120
+                         C70,115 120,140 170,125
+                         C220,105 240,55 320,58
+                         C400,60 430,50 500,100
+                         C560,145 650,100 720,120
+                         C760,130 780,150 800,160
+                         L800,360 L0,360 Z"
+                      fill="rgba(36, 197, 143, 0.28)"/>
+                <path d="M0,120
+                         C70,115 120,140 170,125
+                         C220,105 240,55 320,58
+                         C400,60 430,50 500,100
+                         C560,145 650,100 720,120
+                         C760,130 780,150 800,160"
+                      fill="none" stroke="#20c997" stroke-width="5" stroke-linecap="round"/>
+
+                <path d="M0,210
+                         C70,205 120,140 180,160
+                         C240,180 280,160 350,240
+                         C410,300 470,70 540,90
+                         C620,110 650,290 720,200
+                         C760,150 780,50 800,35
+                         L800,360 L0,360 Z"
+                      fill="rgba(42, 123, 245, 0.25)"/>
+                <path d="M0,210
+                         C70,205 120,140 180,160
+                         C240,180 280,160 350,240
+                         C410,300 470,70 540,90
+                         C620,110 650,290 720,200
+                         C760,150 780,50 800,35"
+                      fill="none" stroke="#2a7bf5" stroke-width="5" stroke-linecap="round"/>
+              </svg>
+
+              <div class="months">
+                <span>Jan '23</span>
+                <span>Feb '23</span>
+                <span>Mar '23</span>
+                <span>Apr '23</span>
+                <span>May '23</span>
+                <span>Jun '23</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel map-panel">
+          <div class="map-head">
+            <span>Sales Value</span>
+            <button>-</button>
+          </div>
+
+          <div class="map-body">
+            <div class="zoom-controls">
+              <span>+</span>
+              <span>−</span>
+            </div>
+
+            <div class="world-map">
+              <svg viewBox="0 0 900 420" class="map-svg">
+                <path d="M120 140 L170 120 L240 140 L250 180 L210 210 L170 200 L150 240 L130 220 L110 180 Z" fill="#e9eef4"/>
+                <path d="M240 240 L280 260 L300 330 L260 390 L230 350 L220 290 Z" fill="#e9eef4"/>
+                <path d="M360 130 L420 110 L470 120 L500 150 L530 130 L580 150 L600 190 L560 220 L520 200 L470 230 L430 220 L390 180 Z" fill="#e9eef4"/>
+                <path d="M450 230 L490 250 L500 320 L470 370 L430 320 L425 270 Z" fill="#e9eef4"/>
+                <path d="M620 150 L680 130 L760 145 L820 170 L840 210 L810 250 L740 240 L690 220 L650 210 Z" fill="#e9eef4"/>
+                <path d="M720 250 L760 270 L790 320 L760 360 L720 340 L700 290 Z" fill="#e9eef4"/>
+              </svg>
+            </div>
+
+            <div class="mini-stats">
+              <div class="mini-item">
+                <div class="mini-chart chart1"></div>
+                <p>Visitors</p>
+              </div>
+              <div class="mini-item">
+                <div class="mini-chart chart2"></div>
+                <p>Online</p>
+              </div>
+              <div class="mini-item">
+                <div class="mini-chart chart3"></div>
+                <p>Sales</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-grid">
+        <div class="panel chat-panel">
+          <div class="chat-header">
+            <div class="chat-title">Direct Chat</div>
+            <div class="chat-count">3</div>
+          </div>
+
+          <div class="chat-body">
+            <div class="message left-msg">
+              <div class="msg-top">
+                <strong>Alexander Pierce</strong>
+                <span>23 Jan 2:00 pm</span>
+              </div>
+              <div class="msg-row">
+                <img src="https://i.pravatar.cc/40?img=12" alt="">
+                <div class="bubble">Is this template really for free? That's unbelievable!</div>
+              </div>
+            </div>
+
+            <div class="message right-msg">
+              <div class="msg-top">
+                <strong>Sarah Bullock</strong>
+                <span>23 Jan 2:05 pm</span>
+              </div>
+              <div class="msg-row reverse">
+                <div class="bubble">You better believe it!</div>
+                <img src="https://i.pravatar.cc/40?img=5" alt="">
+              </div>
+            </div>
+
+            <div class="message left-msg">
+              <div class="msg-top">
+                <strong>Alexander Pierce</strong>
+                <span>23 Jan 5:37 pm</span>
+              </div>
+              <div class="msg-row">
+                <img src="https://i.pravatar.cc/40?img=12" alt="">
+                <div class="bubble">Working with AdminLTE on a great new app! Wanna join?</div>
+              </div>
+            </div>
+
+            <div class="message right-msg">
+              <div class="msg-top">
+                <strong>Sarah Bullock</strong>
+                <span>23 Jan 6:10 pm</span>
+              </div>
+              <div class="msg-row reverse">
+                <div class="bubble">I would love to.</div>
+                <img src="https://i.pravatar.cc/40?img=5" alt="">
+              </div>
+            </div>
+             <div class="message left-msg">
+              <div class="msg-top">
+                <strong>Alexander Pierce</strong>
+                <span>23 Jan 6:15 pm</span>
+              </div>
+              <div class="msg-row">
+                <img src="https://i.pravatar.cc/40?img=12" alt="">
+                <div class="bubble">Awesome! Let's get started tomorrow.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-footer">
+            <input type="text" placeholder="Type Message ..." />
+            <button>Send</button>
+          </div>
+        </div>
+
+        <div class="panel side-widget">
+          <div class="panel-header">Anything you want</div>
+          <div class="placeholder-box">
+            <p>This area can be used for the right-side AdminLTE widgets.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+</body>
+</html>
