@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f8f8f8;
+        }
+
+        /* Navbar Styling */
+        .Navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .Left {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        /* Target the div holding the navigation links */
+        .Navbar > div:nth-child(2) {
+            display: flex;
+            gap: 40px;
+        }
+
+        .Navbar p {
+            cursor: pointer;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .Navbar p:hover {
+            color: #4169e1;
+        }
+
+        /* Main Hero Section */
+        .Main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 60px;
+            gap: 60px;
+        }
+
+        .left-main {
+            flex: 1;
+        }
+
+        .left-main h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .left-main p {
+            font-size: 22px;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        /* Styling the div to look and act like a button */
+        .button {
+            display: inline-block;
+            padding: 15px 35px;
+            background: #4169e1;
+            color: white;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: #2f55d4;
+        }
+
+        .main-right {
+            flex: 1;
+            text-align: center;
+        }
+
+        .main-right img {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 15px;
+        }
+
+        /* ---------- Responsive Design ---------- */
+        
+        /* Tablet & Smaller Screens */
+        @media (max-width: 768px) {
+            .Navbar {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .Navbar > div:nth-child(2) {
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .Main {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .left-main h1 {
+                font-size: 40px;
+            }
+
+            .left-main p {
+                font-size: 18px;
+            }
+
+            .main-right img {
+                max-width: 100%;
+            }
+        }
+
+        /* Mobile Screens */
+        @media (max-width: 480px) {
+            .Left {
+                font-size: 26px;
+            }
+
+            .Navbar > div:nth-child(2) {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .left-main h1 {
+                font-size: 32px;
+            }
+
+            .left-main p {
+                font-size: 16px;
+            }
+
+            .button {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <nav class="Navbar">
+            <div class="Left">
+                 My Brand
+            </div>
+            <div>
+                <p>Home</p>
+                <p>About</p>
+                <p>Services</p>
+                <p>Contact</p>
+            </div>
+        </nav>
+        <div class="Main">
+            <div class="left-main">
+                <h1>Learn Responsive Web Design</h1>
+                <p>Build websites that work beautifully on every device.</p>
+                <div class="button">
+                    Get Started
+                </div>
+            </div>
+            <div class="main-right">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDKw6du5-KiYmkO4JqRFgJWn-S9-V1TwVaCC7hIiJo6WaCWQJa" alt="Responsive Design">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
